@@ -1,4 +1,3 @@
-import logo from "@/assets/enreach-logo.png";
 import heroImage from "@/assets/hero-aluminium-zorba.jpg";
 import portrait from "@/assets/biraj-gajera.jpg";
 import p01 from "@/assets/products/p01.jpg";
@@ -26,7 +25,7 @@ export const profile = {
   websiteLabel: "enreachglobal.com",
   location: "Canada",
   headquarters: "Calgary, Alberta, Canada",
-  logo,
+  logo: "/enreach-global-logo.png",
   heroImage,
   portrait,
   bio: "Biraj Gajera brings deep commercial experience in sales, operations, and business development. He leads with a practical, relationship-first approach, helping expand supplier networks, strengthen trade execution, and build trusted international partnerships.",

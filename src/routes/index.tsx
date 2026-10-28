@@ -12,6 +12,7 @@ import {
   Activity,
   Download,
   Check,
+  Instagram,
 } from "lucide-react";
 import {
   presencePoints,
@@ -226,8 +227,8 @@ function CardPage() {
         <div className="px-6 pb-8 pt-6 text-center">
           <img
             src={profile.logo}
-            alt="Enreach Global Inc. logo"
-            className="mx-auto h-14 w-auto object-contain"
+            alt="Enreach Global — Scrap Trading & Exporting"
+            className="mx-auto h-auto w-[100px] object-contain sm:w-[130px] md:w-[160px]"
           />
           <h1 className="mt-4 text-xl font-bold uppercase tracking-wide text-foreground sm:text-2xl">
             {profile.company}
@@ -242,6 +243,18 @@ function CardPage() {
           <p className="mt-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">
             {profile.title}
           </p>
+          <a
+            href="https://www.linkedin.com/in/biraj-gajera-9992ab174?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with Biraj Gajera on LinkedIn"
+            className="mx-auto mt-4 inline-flex min-h-11 items-center gap-2 rounded-full border border-[#0A66C2]/50 bg-white px-5 py-2 text-sm font-medium text-[#0A66C2] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#0A66C2] hover:bg-[#F0F7FF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2] focus-visible:ring-offset-2"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 fill-current">
+              <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.34H4.96V9.01h2.97v9.33ZM6.45 7.74a1.72 1.72 0 1 1 .02-3.44 1.72 1.72 0 0 1-.02 3.44Zm11.89 10.6h-2.97v-4.54c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.62H9.17V9.01h2.85v1.27h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.56 1.98 3.56 4.55v5.05Z" />
+            </svg>
+            Connect on LinkedIn
+          </a>
         </div>
       </section>
 
@@ -261,6 +274,18 @@ function CardPage() {
           icon={shared ? <Check size={18} /> : <Share2 size={18} />}
           label={shared ? "Link Copied" : "Share Card"}
         />
+        <a
+          href="https://www.instagram.com/enreach_global?xtok=MWg1NTE4Z2didmtiOQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Enreach Global on Instagram"
+          className="card-surface flex w-full flex-col items-center justify-center px-4 py-6 transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0"
+        >
+          <span className="flex size-11 items-center justify-center rounded-full bg-secondary text-primary">
+            <Instagram size={18} />
+          </span>
+          <span className="mt-3 text-sm font-medium text-foreground">Instagram</span>
+        </a>
       </section>
 
       {/* About */}
